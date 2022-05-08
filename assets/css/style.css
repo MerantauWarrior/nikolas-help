@@ -106,11 +106,17 @@ a{
     display: flex;
 }
 .team-item__img{
+    position: relative;
     width: 124px;
-    min-width: 124px;
+    min-width: 124px;.team-item__img
     height: 124px;
     background-color: #C4C4C4;
     overflow: hidden;
+}
+.team-item__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .team-item__text{
     display: flex;
