@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url('../fonts/Gilroy-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url('../fonts/Gilroy-Medium.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url('../fonts/Gilroy-SemiBold.ttf') format("truetype");
+}
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, *:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,
+.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+    font-weight: normal;
+}
+h2{
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 56px;
+    line-height: 76px;
+}
+ul, ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.tac{
+    text-align: center;
+}
+.bgc-y{
+    background-color: #FFDD63;
+}
+.bgc-b{
+    background-color: #3787FE;
+}
+.label{
+    margin-bottom: 13px;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.subscribe{
+    padding: 166px 0;
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 68px;
+    line-height: 92px;
+}
+.subscribe__link{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.team{
+    padding: 120px 0;
+    font-family: "Gilroy-Medium", sans-serif;
+}
+.team__items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 77px;
+    row-gap: 80px;
+    margin: 90px 0;
+}
+.team-item{
+    display: flex;
+}
+.team-item__img{
+    width: 124px;
+    min-width: 124px;
+    height: 124px;
+    background-color: #C4C4C4;
+    overflow: hidden;
+}
+.team-item__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+    padding-top: 8px;
+}
+.team-item__name{
+    font-size: 26px;
+    line-height: 35px;
+}
+.team-item__position{
+    margin-top: 6px;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+.team-item__link{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3787FE;
+}
+.team__more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 72px;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.team__more:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.partners{
+    padding: 140px 0;
+    color: #ffffff;
+}
+.partners__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 42px;
+    margin-top: 74px;
+}
+.partners__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 148px;
+    background-color: #ffffff;
+}
+
+.contacts{
+    padding: 100px 0;
+    background-color: #ffffff;
+    font-family: "Gilroy-Medium", sans-serif;
+}
+.contacts__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-title{
+    display: flex;
+    align-items: center;
+}
+.contacts-title svg{
+    margin-left: 13px;
+    margin-top: 5px;
+}
+.contacts-list{
+    margin-top: 39px;
+}
+.contacts-list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacts-list__item:not(:last-child){
+    margin-bottom: 30px;
+}
+.contacts-list__value{
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.contacts-list__value:hover{
+    color: #3787FE;
+}
