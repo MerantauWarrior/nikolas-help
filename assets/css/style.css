@@ -46,7 +46,7 @@ img{
     display: block;
     max-width: 100%;
 }
-a{
+a, svg{
     outline: none;
     text-decoration: none;
     -webkit-transition: all 0.25s;
@@ -107,6 +107,163 @@ a{
 .slider-arrow.slick-disabled{
     opacity: 0.2;
     cursor: not-allowed;
+}
+.js-copy{
+    cursor: pointer;
+}
+
+.stream{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+.stream-slider{
+    margin: 0 -19px;
+}
+.stream-slider .slick-track{
+    display: flex;
+    align-items: center;
+}
+.stream-slider__item{
+    padding: 0 19px;
+}
+.stream-slider__item img{
+    width: 100%;
+}
+
+.work{
+    padding: 126px 0;
+    color: #ffffff;
+}
+.work__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 84px;
+}
+.work__info{
+    width: 100%;
+    max-width: 21%;
+    margin-top: 20px;
+}
+.work-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.work-item h3{
+    font-size: 78px;
+    line-height: 105px;
+    letter-spacing: -0.03em;
+}
+.work-item p{
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: lowercase;
+    opacity: 0.6;
+}
+.work__slider{
+    width: 100%;
+    max-width: 62.75%;
+}
+.work-slider__next, .work-slider__prev {
+    border: 2px solid #ffffff;
+}
+
+.faqs{
+    padding: 120px 0;
+    font-family: "Gilroy-Medium", sans-serif;
+}
+.faqs__items{
+    margin-top: 84px;
+}
+.faqs-item{
+    border: 1px solid #C4C4C4;
+}
+.faqs-item--active{
+    border: 1px solid #000000;
+}
+.faqs-item:not(:last-child){
+    margin-bottom: 25px;
+}
+.faqs-item__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 50px;
+    cursor: pointer;
+}
+.faqs-item__title{
+    font-size: 38px;
+    line-height: 51px;
+}
+.faqs-item__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #000000;
+}
+.faqs-item--active .faqs-item__btn{
+    background-color: #000000;
+}
+.faqs-item__btn svg{
+    fill: black;
+}
+.faqs-item--active .faqs-item__btn svg{
+    fill: white;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.faqs-item__body{
+    display: none;
+    margin: 10px 50px 50px 50px;
+    padding: 40px 55px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(55, 135, 254, 0.1);
+}
+.faqs-item__field:not(:last-child){
+    margin-bottom: 40px;
+}
+.faqs-item__label{
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.faqs-item__value{
+    display: flex;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    height: 32px;
+}
+.faqs-item__copy{
+    margin-left: 10px;
+}
+.faqs-item__copy svg{
+    display: block;
+}
+.faqs-item-crypto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px;
+}
+.faqs-item-crypto__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faqs-item-crypto__item-img{
+    margin-bottom: 23px;
 }
 
 .help{
