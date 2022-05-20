@@ -112,6 +112,114 @@ a, svg{
     cursor: pointer;
 }
 
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0 70px;
+    font-family: "Gilroy-Medium", sans-serif;
+}
+.header__wrapper{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-top: 27px;
+}
+.header__controls{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8px;
+}
+.logo{
+    margin-right: 84px;
+}
+.menu{
+    margin-right: auto;
+}
+.lang{
+    margin-right: 41px;
+}
+.menu__item,
+.lang__item{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.menu__item:not(:last-child){
+    margin-right: 42px;
+}
+.menu__item:hover{
+    color: #FFDD63;
+}
+.lang__item{
+    opacity: 0.6;
+}
+.lang__item:not(:last-child){
+    margin-right: 17px;
+}
+.lang__item:hover,
+.lang__item_active{
+    font-family: "Gilroy-SemiBold", sans-serif;
+    opacity: 1;
+}
+.donate{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 2px solid #000000;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+.donate:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.donate span{
+    margin-right: 4px;
+}
+
+.intro{
+    padding: 262px 15px 0 15px;
+    font-family: "Gilroy-Medium", sans-serif;
+    background: #fff url('../img/intro-bg.svg') top center no-repeat;
+    background-size: cover;
+}
+.intro__head{
+    max-width: 1114px;
+    margin: 0 auto 488px auto;
+    color: #ffffff;
+}
+.intro__suptitle{
+    margin-bottom: 22px;
+    font-size: 28px;
+    line-height: 32px;
+}
+.intro__title{
+    font-size: 98px;
+    line-height: 113px;
+}
+.intro__text{
+    max-width: 1070px;
+    margin: 0 auto;
+    font-size: 38px;
+    line-height: 53px;
+    text-align: center;
+}
+.intro__text span{
+    padding: 0 5px;
+    background-color: #3787FE;
+    color: #ffffff;
+}
+
 .stream{
     margin-top: 80px;
     margin-bottom: 120px;
