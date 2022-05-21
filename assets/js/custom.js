@@ -9,15 +9,15 @@ $( document ).ready(function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         }
       }
     ]
@@ -32,21 +32,48 @@ $( document ).ready(function() {
   $('.work-slider').slick({
     dots: false,
     infinite: false,
-    speed: 250,
     slidesToShow: 1,
+    slidesToScroll: 1,
     variableHeight: true,
     prevArrow: $('.work-slider__prev'),
-    nextArrow: $('.work-slider__next')
+    nextArrow: $('.work-slider__next'),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.projects-slider').slick({
     dots: false,
     infinite: false,
-    speed: 250,
     slidesToShow: 1,
-    variableHeight: true,
+    slidesToScroll: 1,
     prevArrow: $('.projects-slider__prev'),
-    nextArrow: $('.projects-slider__next')
+    nextArrow: $('.projects-slider__next'),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.projects-tab__title').click(function () {
