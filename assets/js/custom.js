@@ -1,6 +1,11 @@
 $( document ).ready(function() {
   console.log('asd')
 
+  $('.header__mobile').click(function () {
+    $(this).toggleClass('header__mobile_active');
+    $('.header__wrapper').slideToggle(250)
+  });
+
   $('.stream-slider').slick({
     dots: false,
     infinite: false,

@@ -120,6 +120,9 @@ a, svg{
     padding: 0 70px;
     font-family: "Gilroy-Medium", sans-serif;
 }
+.header__mobile{
+    display: none;
+}
 .header__wrapper{
     display: flex;
     align-items: flex-start;
@@ -218,6 +221,9 @@ a, svg{
     padding: 0 5px;
     background-color: #3787FE;
     color: #ffffff;
+}
+.donate-mobile{
+    display: none;
 }
 
 .stream{
