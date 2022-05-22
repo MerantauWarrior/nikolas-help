@@ -86,6 +86,12 @@ $( document ).ready(function() {
     $(this).parent().addClass('projects-tab--active');
   });
 
+  $('.team__more').click(function (e) {
+    e.preventDefault();
+    $('.team-item:nth-child(6) ~ .team-item').css('display', 'flex');
+    $(this).remove();
+  });
+
   $('.js-copy').click(function () {
     let value = $(this).data('value');
     if (navigator && navigator.clipboard && navigator.clipboard.writeText){

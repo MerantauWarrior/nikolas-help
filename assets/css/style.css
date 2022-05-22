@@ -570,6 +570,9 @@ a, svg{
 .team-item{
     display: flex;
 }
+.team-item:nth-child(6) ~ .team-item{
+    display: none;
+}
 .team-item__img{
     position: relative;
     width: 124px;
