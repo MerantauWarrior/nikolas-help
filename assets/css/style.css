@@ -376,6 +376,7 @@ a, svg{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 191px;
 }
 .faqs-item-crypto__item-img{
     margin-bottom: 23px;
@@ -480,8 +481,8 @@ a, svg{
 }
 .projects-tab__title{
     padding: 25px 0;
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 32px;
     cursor: pointer;
 }
 .projects-tab__text{
