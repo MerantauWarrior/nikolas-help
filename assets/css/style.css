@@ -142,9 +142,11 @@ a, svg{
     margin-right: 84px;
 }
 .menu{
+    order: 1;
     margin-right: auto;
 }
 .lang{
+    order: 2;
     margin-right: 41px;
 }
 .menu__item,
@@ -171,6 +173,7 @@ a, svg{
     opacity: 1;
 }
 .donate{
+    order: 3;
     display: inline-flex;
     align-items: center;
     justify-content: center;

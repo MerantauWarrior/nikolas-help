@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
   $('.header__mobile').click(function () {
     $(this).toggleClass('header__mobile_active');
-    $('.header__wrapper').slideToggle(250)
+    $('.header__controls').slideToggle(250)
   });
 
   $('.stream-slider').slick({

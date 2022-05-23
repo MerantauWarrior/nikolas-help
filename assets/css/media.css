@@ -12,7 +12,8 @@
         justify-content: center;
         width: 24px;
         height: 24px;
-        z-index: 2;
+        margin-left: auto;
+        z-index: 3;
     }
     .header__mobile div{
         width: 24px;
@@ -37,6 +38,9 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
     .header__wrapper{
+        padding-top: 0;
+    }
+    .header__controls{
         display: none;
         position: absolute;
         top: 0;
@@ -44,13 +48,20 @@
         left: 0;
         padding: 20px 16px;
         background-color: #3787FE;
+        z-index: 2;
     }
     .logo{
-        display: none;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        height: 60px;
+        z-index: 1;
+    }
+    .logo img{
+        max-height: 100%;
     }
     .header__controls{
         flex-direction: column;
-        align-items: flex-end;
         margin-top: 0;
     }
     .menu{
@@ -169,7 +180,8 @@
         background-size: 100% auto;
     }
     .intro__head{
-        margin-bottom: 260px;
+        margin-bottom: 200px;
+        /*margin-bottom: 260px;*/
     }
     .intro__suptitle{
         margin-bottom: 16px;
