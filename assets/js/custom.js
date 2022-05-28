@@ -58,32 +58,40 @@ $( document ).ready(function() {
     ]
   });
 
-  $('.projects-slider').slick({
-    dots: false,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.projects-slider__prev'),
-    nextArrow: $('.projects-slider__next'),
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 2,
+  $('.projects-slider').each(function () {
+    let slider = $(this);
+    slider.slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: slider.parent().find('.projects-slider__prev'),
+      nextArrow: slider.parent().find('.projects-slider__next'),
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          }
         }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  });
+      ]
+    });
+  })
+
 
   $('.projects-tab__title').click(function () {
     $('.projects-tab').removeClass('projects-tab--active');
     $(this).parent().addClass('projects-tab--active');
+    let tabI = $(this).parent().index();
+    $('.projects__slider').removeClass('projects__slider_active');
+    $('.projects__slider').eq(tabI).addClass('projects__slider_active');
+    $('.projects__slider').find('.projects-slider').get(tabI).slick.setPosition();
   });
 
   $('.team__more').click(function (e) {

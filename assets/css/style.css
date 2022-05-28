@@ -347,6 +347,11 @@ a, svg{
     border-radius: 20px;
     background-color: rgba(55, 135, 254, 0.1);
 }
+.faqs-item__body-header{
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 40px;
+}
 .faqs-item__field:not(:last-child){
     margin-bottom: 40px;
 }
@@ -475,17 +480,24 @@ a, svg{
 .projects__tabs{
     width: 33.66666666666667%;
 }
-.projects__slider{
+.projects__sliders{
     width: 58.91666666666667%;
     margin-left: auto;
+}
+.projects__slider{
+    display: none;
+    width: 100%;
+}
+.projects__slider_active{
+    display: block;
 }
 .projects-tab{
     border-bottom: 2px solid #000000;
 }
 .projects-tab__title{
     padding: 25px 0;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     cursor: pointer;
 }
 .projects-tab__text{

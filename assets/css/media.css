@@ -175,7 +175,7 @@
 
     .intro{
         margin-top: -1px;
-        padding: 41px 23px 0 23px;
+        padding: 30% 23px 0 23px;
         background: #fff url('../img/intro-bg-m.svg') top center no-repeat;
         background-size: 100% auto;
     }
@@ -279,7 +279,7 @@
     }
     .faqs-item-crypto{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         padding: 16px;
     }
     .faqs-item-crypto__item:not(:last-child){
