@@ -1,0 +1,50 @@
+.header{
+    position: relative;
+}
+.nft{
+    padding: 40px 0;
+}
+.nft__banner-inner{
+    position: relative;
+    height: 0;
+    padding-bottom: 25%;
+}
+.nft__banner img{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.nft-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+.nft-item{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 32px;
+}
+.nft-item__title{
+    margin: 8px 0;
+    font-size: inherit;
+}
+.nft-item__title a{
+    color: #ffffff;
+}
+.nft-item__title a:hover{
+    color: #FFDD63;
+}
+@media all and (max-width: 600px){
+    .nft-grid{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
