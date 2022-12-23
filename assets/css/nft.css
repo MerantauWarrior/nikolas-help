@@ -20,11 +20,23 @@
     max-height: 100%;
     object-fit: cover;
 }
+.nft-item__seo{
+    padding: 48px 0;
+    color: #ffffff;
+}
+.nft-item__seo h1{
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 48px;
+}
+.nft-item__seo p{
+    font-size: 24px;
+    line-height: 32px;
+}
 .nft-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-    margin: 40px 0;
 }
 .nft-item{
     display: flex;

@@ -161,6 +161,22 @@ a, svg{
 .menu__item:hover{
     color: #FFDD63;
 }
+.menu__item--nft{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 2px solid #000000;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+.menu__item--nft:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
 .lang__item{
     opacity: 0.6;
 }
